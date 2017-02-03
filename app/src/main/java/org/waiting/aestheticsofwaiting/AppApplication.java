@@ -14,6 +14,6 @@ public class AppApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Typekit.getInstance()
-                .addNormal(Typekit.createFromAsset(this, "MY_FONT"));
+                .addNormal(Typekit.createFromAsset(this, "MY_FONT "));
     }
 }

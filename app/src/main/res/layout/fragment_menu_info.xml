@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3ef"
+    android:orientation="vertical"
+    tools:context="org.waiting.aestheticsofwaiting.shop.MenuInfoFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <com.viewpagerindicator.CirclePageIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="1dp"
+            app:fillColor="#FCFCFC"
+            app:pageColor="#CCCECB"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/indicator"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:shadowColor="#464646"
+            android:shadowDx="1.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="1.0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="ㅁ니아ㅓ미나어미나ㅓ임ㄴ"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="전화"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_orange_button"
+            android:id="@+id/telBtn" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#F6B918" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F6B918" />
+
+</LinearLayout>
